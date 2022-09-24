@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+
+        <div class="container">
+            <div class="elem">
+                <label class="label1" for="fullname">Fullname  :</label>
+                <input id="fullname"  
+                autofocus 
+                type="text" 
+                placeholder="enter your name..." 
+                name="fullname"
+                required
+                class="inpt">
+            </div>
+            
+
+            <div class="elem">
+                <label class="label1" for="email">Email  :</label>
+                <input id="email" 
+                placeholder="enter your email..."
+                type="email" 
+                name="email"
+                required
+                class="inpt">   
+            </div>
+
+            <div class="elem">
+                <label class="label1" for="usr">Username  :</label>
+                <input id="usr" 
+                placeholder="enter your username..."
+                type="text" 
+                name="username"
+                required
+                class="inpt">                
+            </div>
+
+            <div class="elem">
+                <label class="label1" for="password">Password  :</label>
+                <input id="password" 
+                placeholder="enter your password..."
+                type="password" 
+                name="password"
+                required
+                class="inpt">
+            </div>
+
+
+            <div class="elem">
+                <label class="label1" for="re-password">Confirm password  :</label>
+                <input id="re-password" 
+                placeholder="enter your password..."
+                type="password" 
+                name="re-password"
+                required
+                class="inpt">
+            </div>
+
+
+            <div class="elem">
+                <label class="label1" for="age">Age  :</label>
+                <input id="age" 
+                placeholder="enter your age..."
+                type="number" 
+                name="age"
+                required
+                class="inpt">
+            </div>
+
+            
+
+            <div class="elem_l elem">
+                <div>
+                    <label class="label1" for="date">BirthDay  :</label>
+                </div>
+                <div>
+                    <input id="date" 
+                    placeholder="enter your date..."
+                    type="date" 
+                    name="date"
+                    required
+                    >                    
+                </div>
+            </div>
+            
+
+
+
+
+
+
+
+
+
+
+            <div class="elem_l elem">
+                <div>
+                    <p>Gender</p>
+                </div>
+
+                <div >
+                    <input type="radio" 
+                    name="gender" 
+                    value="male"
+                    id="male"
+                    checked>
+                    <label class="label1" for="male">male</label>
+                </div>
+
+                <div >
+                    <input type="radio" 
+                    name="gender" 
+                    value="female"
+                    id="female">
+                    <label class="label1" for="female">female</label>
+                </div>
+    
+                
+            </div>
+            
+
+
+
+
+
+            <div class="elem textoo">
+
+
+                
+                    <div class="title_comm">
+                        <label class="label1" for="comment">Add Comment :</label>
+                    </div>
+                    <div class="box_comm">
+                        <textarea class="comm_box"
+                        name="comment" 
+                        id="comment" 
+                        cols="30" 
+                        rows="10"
+                        placeholder="add a comment..."
+                        ></textarea>                         
+                    </div>
+                     
+                
+
+
+            </div>
+
+            
+
+            
+
+            <div class="elem">
+                <label class="label1" for="car">choose a car :</label>
+                <select class="inpt" name="car" id="car">
+                    <option value="mercedess">mercedess</option>
+                    <option value="ferrari">ferrari</option>
+                    <option value="audi">audi</option>
+                </select>
+            </div>
+            
+
+            <div class="elem suub">
+                <input class="submit" type="submit">
+            </div>
+
+
+        </div>
+
+        
+
+    </form>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .label1{
+            width: 100%;
+            margin: 4px;
+        }
+
+        .container{
+            height: 700px;
+            max-width: 1000px;
+            width: 100%;
+            padding:25px 30px ;
+            background: #fff;
+            border: solid 1px;
+            border-radius: 5px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(135deg ,#71b7e6, #9b59b6 );
+        }
+
+        .elem{
+            width: 50%;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .textoo{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
+        .elem_l{
+            font-size: 18px;
+            width: 50%;
+            padding: 20px;
+        }
+
+        .comm_box{
+            width: 100%;
+            height: 100%;
+        }
+
+        .title_comm{
+            width: 25%;
+            height: 100%;
+        }
+
+        .box_comm{
+            width: 70%;
+            height: 100%;
+
+        }
+
+        .inpt{
+            width: 90%;
+            height: 70%;
+            padding-left:5px ;
+        }
+
+        .submit{
+            width: 50%;
+            height: 50%;
+
+        }
+
+        .suub{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    </style>
+</body>
+</html>
